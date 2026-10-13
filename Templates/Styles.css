@@ -1,0 +1,38 @@
+html{
+    overscroll-behavior: none;
+}
+body{
+    margin: 0;
+}
+.tab-island{
+    overflow: scroll;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: auto;
+    display: flex;
+
+    scrollbar-width: none;
+}
+
+.tab{
+    margin: 4px;
+    padding: 8px;   
+}
+.search-btn{
+    padding: 10px; 
+    margin: 4px;
+    margin-left: auto;  /*https://stackoverflow.com/questions/33924655/position-last-flex-item-at-the-end-of-container*/
+}
+.header{
+    display: flex;
+}
+
+.homepage-grid{
+    
+}
+
+.favourites{
+    width: 30vh;
+    height: 30vh;
+}
