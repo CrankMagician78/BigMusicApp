@@ -30,6 +30,3 @@ for num in range(5):
     q.appendSong(num)
 for num in range(10):
     print(q.getNextSong())
-
-while True:
-	pass

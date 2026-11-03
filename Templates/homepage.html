@@ -3,11 +3,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Styles.css">
-    <script src="bigcode.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Styles.css') }}">
+    <script src="{{ url_for('static', filename='bigcode.js') }}"></script>
 </head>
 <body>
-    <div class="header">
+    <div class="navbar-"></div>
         <div class="tab-island">
             <button class="tab">Homepage</button>
             <button class="tab">Artists</button>
@@ -16,14 +16,70 @@
             <button class="tab">Playlists</button>
         </div>
         <button class="search-btn">Search</button>
+    
     </div>
-    <div class="homepage-grid">
+    <div class="homepage">
         <div class="favourites">
-
+            <h2>Favourites</h2>
+            <div class="fav-grid">
+                <div class="fav-item"><img class="fav-item-img" src="{{ url_for('static', filename='test.jpeg') }}" alt=""><h3 class="fav-item-text">Aerials</h3></div>
+                <div class="fav-item"><img class="fav-item-img" src="{{ url_for('static', filename='test.jpeg') }}" alt=""><h3 class="fav-item-text">Deer dance</h3></div>
+                <div class="fav-item"><img class="fav-item-img" src="{{ url_for('static', filename='test.jpeg') }}" alt=""><h3 class="fav-item-text">Toxicity</h3></div>
+                <div class="fav-item"><img class="fav-item-img" src="{{ url_for('static', filename='test.jpeg') }}" alt=""><h3 class="fav-item-text">Prison song</h3></div>    
+            </div>
         </div>
 
         <div class="recommended">
-
+            <div class="recommended-item">
+                <img class="recommended-item-img" src="{{ url_for('static', filename='test.jpeg') }}" alt="">
+                <div class="recommended-item-title">Psycho</div>
+                <div class="recommended-item-artist">System of a down</div>
+            </div>
+            <div class="recommended-item">
+                <img class="recommended-item-img" src="{{ url_for('static', filename='test.jpeg') }}" alt="">
+                <div class="recommended-item-title">Psycho</div>
+                <div class="recommended-item-artist">System of a down</div>
+            </div>
+            <div class="recommended-item">
+                <img class="recommended-item-img" src="{{ url_for('static', filename='test.jpeg') }}" alt="">
+                <div class="recommended-item-title">Psycho</div>
+                <div class="recommended-item-artist">System of a down</div>
+            </div>
+            <div class="recommended-item">
+                <img class="recommended-item-img" src="{{ url_for('static', filename='test.jpeg') }}" alt="">
+                <div class="recommended-item-title">Psycho</div>
+                <div class="recommended-item-artist">System of a down</div>
+            </div>
+            <div class="recommended-item">
+                <img class="recommended-item-img" src="{{ url_for('static', filename='test.jpeg') }}" alt="">
+                <div class="recommended-item-title">Psycho</div>
+                <div class="recommended-item-artist">System of a down</div>
+            </div>
+            <div class="recommended-item">
+                <img class="recommended-item-img" src="{{ url_for('static', filename='test.jpeg') }}" alt="">
+                <div class="recommended-item-title">Psycho</div>
+                <div class="recommended-item-artist">System of a down</div>
+            </div>
+            <div class="recommended-item">
+                <img class="recommended-item-img" src="{{ url_for('static', filename='test.jpeg') }}" alt="">
+                <div class="recommended-item-title">Psycho</div>
+                <div class="recommended-item-artist">System of a down</div>
+            </div>
+            <div class="recommended-item">
+                <img class="recommended-item-img" src="{{ url_for('static', filename='test.jpeg') }}" alt="">
+                <div class="recommended-item-title">Psycho</div>
+                <div class="recommended-item-artist">System of a down</div>
+            </div>
+            <div class="recommended-item">
+                <img class="recommended-item-img" src="{{ url_for('static', filename='test.jpeg') }}" alt="">
+                <div class="recommended-item-title">Psycho</div>
+                <div class="recommended-item-artist">System of a down</div>
+            </div>
+            <div class="recommended-item">
+                <img class="recommended-item-img" src="{{ url_for('static', filename='test.jpeg') }}" alt="">
+                <div class="recommended-item-title">Psycho</div>
+                <div class="recommended-item-artist">System of a down</div>
+            </div>
         </div>
     </div>
 </body>
