@@ -4,8 +4,17 @@ html{
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
 }
+
+.navbar{
+    z-index: 1;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    display: flex;
+}
+
 .tab-island{
     overflow: scroll;
     padding: 0;
@@ -23,15 +32,11 @@ body{
 .search-btn{
     padding: 10px; 
     margin: 4px;
+    margin-right: 10px;
     margin-left: auto;  /*https://stackoverflow.com/questions/33924655/position-last-flex-item-at-the-end-of-container*/
 }
-.navbar{
-    width: 100vw;
-    display: flex;
-    position: fixed;
-}
 .homepage{
-    margin-top: nav;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: start;

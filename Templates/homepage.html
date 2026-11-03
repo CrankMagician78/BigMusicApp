@@ -7,18 +7,18 @@
     <script src="{{ url_for('static', filename='bigcode.js') }}"></script>
 </head>
 <body>
-    <div class="navbar-"></div>
+    <div class="navbar">
         <div class="tab-island">
-            <button class="tab">Homepage</button>
-            <button class="tab">Artists</button>
-            <button class="tab">Albums</button>
-            <button class="tab">Songs</button>
-            <button class="tab">Playlists</button>
+            <button class="tab" onclick="go_to('home')">Homepage</button>
+            <button class="tab" onclick="go_to('artist')">Artists</button>
+            <button class="tab" onclick="go_to('album')">Albums</button>
+            <button class="tab" onclick="go_to('song')">Songs</button>
+            <button class="tab" onclick="go_to('playlist')">Playlists</button>
         </div>
         <button class="search-btn">Search</button>
-    
     </div>
-    <div class="homepage">
+    
+    <div class="homepage" id="home">
         <div class="favourites">
             <h2>Favourites</h2>
             <div class="fav-grid">
@@ -81,6 +81,18 @@
                 <div class="recommended-item-artist">System of a down</div>
             </div>
         </div>
+    </div>
+    
+    <div class="homepage" id="artist">
+    </div>
+    
+    <div class="homepage" id="album">
+    </div>
+    
+    <div class="homepage" id="song">
+    </div>
+    
+    <div class="homepage" id="playlist">
     </div>
 </body>
 </html>
